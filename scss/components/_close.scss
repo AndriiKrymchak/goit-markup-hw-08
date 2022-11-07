@@ -1,0 +1,26 @@
+.close__button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-white-color);
+  border: 1px solid #0000001a;
+  border-radius: 50%;
+  content: '';
+  cursor: pointer;
+}
+
+.close__icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  fill: currentColor;
+  transition: fill 250ms var(--transition-time);
+}
+
+.close__button {
+  &:hover .close__icon {
+    fill: var(--accent-color);
+  }
+}
