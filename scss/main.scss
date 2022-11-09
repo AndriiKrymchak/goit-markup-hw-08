@@ -1,13 +1,13 @@
-@import  './utilis/variables';
-@import './utilis/base';
-@import './utilis/utils';
+@import './utils/variables';
+@import './utils/base';
+@import './utils/utils';
 @import './components/advantages';
-@import './components/button';
-@import './components/backdrop';
-@import './components/close';
-@import './components/checkbox';
-@import './components/modal';
-@import './components/network-link';
+@import './utils/button';
+@import './utils/backdrop';
+@import './utils/close';
+@import './utils/checkbox';
+@import './utils/modal';
+@import './utils/network-link';
 @import './components/footer';
 @import './components/header';
 @import './components/hero';
@@ -16,5 +16,3 @@
 @import './components/clients';
 @import './components/portfolio';
 @import './components/gallery';
-
-
