@@ -1,0 +1,35 @@
+.projects {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.projects__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects__list {
+  position: relative;
+  display: flex;
+  gap: var(--item-set-gap);
+}
+
+.projects__subtitle {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+}
