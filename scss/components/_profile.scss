@@ -2,64 +2,78 @@
   margin-top: 0;
   margin-bottom: 0;
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__container {
-    max-width: 768px;
+    max-width: 480px;
     width: 100%;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: 480px) {
+      max-width: 480px;
+    }
 
     @media (min-width: 768px) {
       max-width: 768px;
       margin: 0 auto;
-      padding-left: 15px;
-      padding-right: 15px;
     }
     @media (min-width: 1200px) {
       max-width: 1200px;
     }
   }
-}
+  &__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-.profile__title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
+  &__background {
+    background-color: var(--primary-white-color);
+    padding: 30px;
+  }
 
-.profile__background {
-  background-color: var(--primary-white-color);
-  padding: 30px;
-}
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--item-set-gap);
 
-.profile__list {
-  display: flex;
-  gap: var(--item-set-gap);
-}
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+      flex-direction: row;
+    }
+  }
 
-.profile__item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+  &__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-.profile__subtitle {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-bottom: 10px;
-}
+  &__subtitle {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-.profile__text {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-bottom: 16px;
+  &__text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+  }
 }
