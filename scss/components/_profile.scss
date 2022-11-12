@@ -1,21 +1,21 @@
 .profile {
+  max-width: 480px;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   background-color: #f5f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 15px;
 
   @media (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    max-width: 2000px;
+    // margin: 0 auto;
+    padding: 94px 0;
   }
 
   &__container {
     max-width: 480px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 
     @media (min-width: 480px) {
       max-width: 480px;
@@ -23,12 +23,27 @@
 
     @media (min-width: 768px) {
       max-width: 768px;
-      margin: 0 auto;
     }
     @media (min-width: 1200px) {
       max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
+
+  &__card {
+    width: 100%;
+    @media (min-width: 480px) {
+      max-width: 480px;
+      background-color: var(--primary-white-color);
+    }
+    @media (min-width: 1200px) {
+      max-width: 270px;
+    }
+  }
+
   &__title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -55,6 +70,7 @@
   }
 
   &__item {
+    display: block;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
