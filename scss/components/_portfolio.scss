@@ -1,6 +1,22 @@
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  &__container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      max-width: 768px;
+      margin: 0 auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
 }
 
 .portfolio__list {

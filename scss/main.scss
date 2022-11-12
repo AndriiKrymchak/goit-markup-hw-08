@@ -1,18 +1,21 @@
 @import './utils/variables';
 @import './utils/base';
 @import './utils/utils';
-@import './components/advantages';
 @import './utils/button';
 @import './utils/backdrop';
 @import './utils/close';
 @import './utils/checkbox';
 @import './utils/modal';
 @import './utils/network-link';
+
+@import './components/advantages';
+@import './components/clients';
 @import './components/footer';
+@import './components/gallery';
 @import './components/header';
 @import './components/hero';
+@import './components/mobile-menu';
+// @import './components/mobile-network';
+@import './components/portfolio';
 @import './components/profile';
 @import './components/projects';
-@import './components/clients';
-@import './components/portfolio';
-@import './components/gallery';

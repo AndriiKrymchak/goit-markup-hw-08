@@ -20,11 +20,16 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__nav container">
+      <div class="header__container">
         <nav class="header__menu">
           <a href="./index.html" class="header__logo"
             >Web<span class="header__logo--studio">Studio</span></a
           >
+          <button type="button" class="header__burger-menu js-open-menu">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu_40px"></use>
+            </svg>
+          </button>
           <ul class="header__list">
             <li class="header__item">
               <a href="./index.html" class="header__link current">Студія</a>
@@ -64,8 +69,8 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="container">
-          <h2 class="advantages visually-hidden">Наші переваги</h2>
+        <div class="advantages__container">
+          <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--antenna">
               <h3 class="advantages__subtitle">Увага до деталей</h3>
@@ -95,7 +100,7 @@
         </div>
       </section>
       <section class="projects">
-        <div class="container">
+        <div class="projects__container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="projects__list">
             <li class="projects__item">
@@ -114,11 +119,16 @@
         </div>
       </section>
       <section class="profile">
-        <div class="container">
+        <div class="profile__container">
           <h2 class="title">Наша команда</h2>
           <ul class="profile__list">
             <li class="profile__item">
-              <img src="./images/teamone.jpg" alt="Ігор Дем'яненко" width="270" />
+              <img
+                srcset="./images/teamone.jpg"
+                src="./images/teamone.jpg"
+                alt="Ігор Дем'яненко"
+                width="270"
+              />
               <div class="profile__background">
                 <h3 class="profile__subtitle">Ігор Дем'яненко</h3>
                 <p lang="en" class="profile__text">Product Designer</p>
@@ -253,7 +263,7 @@
         </div>
       </section>
       <section class="clients">
-        <div class="container">
+        <div class="clients__container">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="clients__item">
@@ -377,6 +387,59 @@
       </div>
     </footer>
 
+    <!-- Mobile-menu -->
+
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button class="mobile-menu__close-button js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu-close_40px"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-contacts__list">
+            <li class="mobile-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-network__list">
+            <li class="mobile-network__item">
+              <a href="" class="mobile-network__link">Instagram</a>
+            </li>
+            <li class="mobile-network__item">
+              <a href="" class="mobile-network__link">Twitter</a>
+            </li>
+            <li class="mobile-network__item">
+              <a href="" class="mobile-network__link">Facebook</a>
+            </li>
+            <li class="mobile-network__item">
+              <a href="" class="mobile-network__link">linkedin</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close__button" type="button" data-modal-close>
@@ -442,6 +505,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

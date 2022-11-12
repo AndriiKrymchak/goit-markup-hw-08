@@ -23,6 +23,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  margin: auto;
 }
 
 .section {
@@ -31,10 +33,19 @@ img {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 768px;
+  width: 100%;
+
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .title {
