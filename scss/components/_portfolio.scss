@@ -1,6 +1,11 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__container {
     padding-left: 15px;
@@ -20,13 +25,46 @@
     }
   }
 
+  &__box {
+    @media (min-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 8px;
+      justify-content: center;
+    }
+  }
+
+  &__tablet-btn {
+    @media (min-width: 480px) {
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tablet-box {
+    @media (min-width: 480px) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+
   &__list {
     display: flex;
 
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 50px;
 
     @media (min-width: 480px) {
       justify-content: flex-start;
@@ -34,6 +72,10 @@
 
     @media (min-width: 768px) {
       justify-content: center;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 50px;
     }
   }
 
