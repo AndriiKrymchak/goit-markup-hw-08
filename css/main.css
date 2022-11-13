@@ -1497,7 +1497,7 @@ img {
 }
 @media (min-width: 1200px) {
   .profile__card {
-    max-width: 270px;
+    width: 270px;
   }
 }
 .profile__title {
@@ -1522,13 +1522,14 @@ img {
           flex-direction: column;
   gap: var(--item-set-gap);
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .profile__list {
-    max-width: 1200px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .profile__item {
@@ -1536,7 +1537,21 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--primary-white-color);
+}
+@media (min-width: 480px) {
+  .profile__item {
+    width: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .profile__item {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .profile__item {
+    width: 270px;
+  }
 }
 .profile__subtitle {
   color: var(--title-text-color);
