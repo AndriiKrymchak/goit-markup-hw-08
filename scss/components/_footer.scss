@@ -1,23 +1,29 @@
 .footer {
   background-color: var(--primary-background-footer);
-  padding: 60px 15px;
-  max-width: 480px;
-  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media (min-width: 1200px) {
-    max-width: 2000px;
-    padding: 60px 0px;
   }
 
   &__container {
-    max-width: 480px;
-    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
+
+    @media (min-width: 480px) {
+      max-width: 480px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 768px;
+    }
 
     @media (min-width: 1200px) {
       max-width: 1200px;
@@ -126,10 +132,10 @@
 }
 
 .subscription__sending {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // gap: 12px;
 
   @media (min-width: 1200px) {
     flex-direction: row;
@@ -138,8 +144,9 @@
 }
 
 .subscription__input {
-  width: 450px;
+  width: 400px;
 
+  margin-bottom: 20px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -180,6 +187,9 @@
 
   width: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
   fill: var(--primary-white-color);
   transition: background-color 250ms var(--transition-time),
     border-color 250ms var(--transition-time);
