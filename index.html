@@ -127,15 +127,30 @@
           <ul class="projects__list">
             <li class="projects__item">
               <h3 class="projects__subtitle">Десктопні додатки</h3>
-              <img src="./images/imgone.jpg" alt="Програміст працює" width="370" />
+              <img
+                srcset="./images/imgone.jpg 1x, ./images/imgone@2x.jpg 2x"
+                src="./images/imgone.jpg"
+                alt="Програміст працює"
+                width="370"
+              />
             </li>
             <li class="projects__item">
               <h3 class="projects__subtitle">Мобільні додатки</h3>
-              <img src="./images/imgtwo.jpg" alt=" Веб дизайнер розробляє додаток" width="370" />
+              <img
+                srcset="./images/imgtwo.jpg 1x, ./images/imgtwo@2x.jpg 2x"
+                src="./images/imgtwo.jpg"
+                alt=" Веб дизайнер розробляє додаток"
+                width="370"
+              />
             </li>
             <li class="projects__item">
               <h3 class="projects__subtitle">Дизайнерські рішення</h3>
-              <img src="./images/imgthree.jpg" alt="Художник працює з планшетом" width="370" />
+              <img
+                srcset="./images/imgthree.jpg 1x, ./images/imgthree@2x.jpg 2x"
+                src="./images/imgthree.jpg"
+                alt="Художник працює з планшетом"
+                width="370"
+              />
             </li>
           </ul>
         </div>
@@ -145,12 +160,24 @@
           <h2 class="title">Наша команда</h2>
           <ul class="profile__list">
             <li class="profile__item">
-              <img
-                class="profile__card"
-                srcset="./images/igor-450.jpg 1x, ./images/igor-450@2x.jpg 2x"
-                src="./images/igor-270@3x.jpg"
-                alt="Ігор Дем'яненко"
-              />
+              <picture>
+                <source
+                  srcset="./images/igor-450.jpg 1x, ./images/igor-450@2x.jpg 2x"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="./images/igor-354.jpg 1x, ./images/igor-354@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                />
+
+                <source srcset="./images/igor-270@3x.jpg" media="(min-width: 1200px)" />
+                <img
+                  class="profile__card"
+                  src="./images/igor-450.jpg"
+                  alt="Ігор Дем'яненко"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
 
               <div class="profile__background">
                 <h3 class="profile__subtitle">Ігор Дем'яненко</h3>
@@ -184,12 +211,25 @@
               </div>
             </li>
             <li class="profile__item">
-              <img
-                class="profile__card"
-                srcset="./images/olga-450.jpg 1x, ./images/olga-450@2x.jpg 2x"
-                src="./images/olga-270@3x.jpg"
-                alt="Ольга Рєпіна"
-              />
+              <picture>
+                <source
+                  srcset="./images/olga-450.jpg 1x, ./images/olga-450@2x.jpg 2x"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="./images/olga-354.jpg 1x, ./images/olga-354@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                />
+
+                <source srcset="./images/olga-270@3x.jpg" media="(min-width: 1200px)" />
+
+                <img
+                  class="profile__card"
+                  src="./images/olga-450.jpg"
+                  alt="Ольга Рєпіна"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
 
               <div class="profile__background">
                 <h3 class="profile__subtitle">Ольга Рєпіна</h3>
@@ -223,12 +263,25 @@
               </div>
             </li>
             <li class="profile__item">
-              <img
-                class="profile__card"
-                srcset="./images/mykola-450.jpg 1x, ./images/mykola-450@2x.jpg 2x"
-                src="./images/mykola-270@3x.jpg"
-                alt="Микола Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="./images/mykola-450.jpg 1x, ./images/mykola-450@2x.jpg 2x"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="./images/mykola-354.jpg 1x, ./images/mykola-354@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                />
+
+                <source srcset="./images/mykola-270@3x.jpg" media="(min-width: 1200px)" />
+
+                <img
+                  class="profile__card"
+                  src="./images/mykola-450.jpg"
+                  alt="Микола Тарасов"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
 
               <div class="profile__background">
                 <h3 class="profile__subtitle">Микола Тарасов</h3>
@@ -262,12 +315,25 @@
               </div>
             </li>
             <li class="profile__item">
-              <img
-                class="profile__card"
-                srcset="./images/mykhailo-450.jpg 1x, ./images/mykhailo-450@2x.jpg 2x"
-                src="./images/mykhailo-270@2x.jpg"
-                alt="Михайло Єрмаков"
-              />
+              <picture>
+                <source
+                  srcset="./images/michael-450.jpg 1x, ./images/michael-450@2x.jpg 2x"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="./images/michael-354.jpg 1x, ./images/michael-354@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                />
+
+                <source srcset="./images/michael-270@3x.jpg" media="(min-width: 1200px)" />
+
+                <img
+                  class="profile__card"
+                  src="./images/michael-450.jpg"
+                  alt="Микола Тарасов"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
 
               <div class="profile__background">
                 <h3 class="profile__subtitle">Михайло Єрмаков</h3>

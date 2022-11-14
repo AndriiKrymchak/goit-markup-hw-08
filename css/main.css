@@ -172,7 +172,7 @@ img {
 
 .checkbox__label {
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   cursor: pointer;
   display: -webkit-box;
@@ -189,6 +189,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 7px;
+}
+@media (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+  }
 }
 
 .checkbox__link {
@@ -227,14 +232,20 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
   background-color: var(--primary-white-color);
   -webkit-transition: -webkit-transform 250ms var(--transition-time);
   transition: -webkit-transform 250ms var(--transition-time);
   transition: transform 250ms var(--transition-time);
   transition: transform 250ms var(--transition-time), -webkit-transform 250ms var(--transition-time);
+}
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__menu {
@@ -1270,8 +1281,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 118px 15px;
-  max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -1283,24 +1294,24 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url "../../images/hero-480@2x.jpg";
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-480@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-480@2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-768.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-768.jpg);
   }
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url "../../images/hero-768@2x.jpg";
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-768@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-768@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-1600.jpg);
@@ -1309,7 +1320,8 @@ img {
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url "../../images/hero-1600@2x.jpg";
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-1600@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-1600@2x.jpg");
   }
 }
 .hero__container {
@@ -1365,7 +1377,6 @@ img {
   left: 0;
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
-  max-width: 480px;
   width: 100%;
   height: 100%;
   background-color: var(--primary-white-color);
@@ -1640,11 +1651,6 @@ img {
   .profile__container {
     width: 1200px;
     margin: 0 auto;
-  }
-}
-@media (min-width: 1200px) {
-  .profile__card {
-    width: 270px;
   }
 }
 .profile__title {
