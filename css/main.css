@@ -724,10 +724,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
 }
 .footer__logo--studio {
   color: var(--primary-white-color);
-  margin-bottom: 20px;
 }
 .footer__subtitle {
   color: var(--primary-white-color);
@@ -1283,45 +1283,48 @@ img {
           align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  max-width: 480px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-480.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-480.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-480.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-480@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-480@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-480@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480@2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-768.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-768.jpg);
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768.jpg);
   }
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-768@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-768@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-768@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-1600.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-1600.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-1600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1600.jpg);
   }
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-1600@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-1600@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-1600@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600@2x.jpg");
   }
 }
 .hero__container {
@@ -1338,9 +1341,6 @@ img {
 @media (min-width: 768px) {
   .hero__container {
     width: 768px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -1362,6 +1362,11 @@ img {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media (min-width: 1200px) {
   .hero__title {
@@ -1386,6 +1391,7 @@ img {
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
+  overflow-y: scrolls;
 }
 @media (min-width: 768px) {
   .mobile-menu {
@@ -1427,13 +1433,23 @@ img {
   margin-bottom: 32px;
 }
 .mobile-menu__item:last-child {
-  margin-bottom: 302px;
+  margin-bottom: auto;
+}
+@media (min-width: 480px) {
+  .mobile-menu__item:last-child {
+    margin-bottom: 302px;
+  }
 }
 .mobile-menu__link {
   text-decoration: none;
   color: var(--title-text-color);
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 500;
+}
+@media (min-width: 480px) {
+  .mobile-menu__link {
+    font-size: 32px;
+  }
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--accent-color);
@@ -1445,7 +1461,12 @@ img {
   display: flex;
 }
 .mobile-network__item {
-  padding: 1px 10px;
+  padding: 1px 5px;
+}
+@media (min-width: 480px) {
+  .mobile-network__item {
+    padding: 1px 10px;
+  }
 }
 .mobile-network__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -1457,10 +1478,16 @@ img {
   text-decoration: none;
   color: var(--accent-color);
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   cursor: pointer;
+}
+@media (min-width: 480px) {
+  .mobile-network__link {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .mobile-contacts__list {
