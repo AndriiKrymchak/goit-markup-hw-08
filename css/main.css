@@ -148,7 +148,7 @@ img {
   position: absolute;
   top: 5px;
   left: 5px;
-  fill: currentColor;
+  fill: #000;
   -webkit-transition: fill 250ms var(--transition-time);
   transition: fill 250ms var(--transition-time);
 }
