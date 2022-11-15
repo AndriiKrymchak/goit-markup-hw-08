@@ -45,16 +45,20 @@
     flex-direction: column;
   }
 
+  &__list {
+    margin-bottom: 32px;
+
+    @media (min-width: 480px) {
+      margin-bottom: 64px;
+    }
+    @media (min-width: 568px) {
+      margin-bottom: 302px;
+    }
+  }
+
   &__item {
     &:not(:last-child) {
       margin-bottom: 32px;
-    }
-    &:last-child {
-      margin-bottom: 32px;
-
-      @media (min-width: 480px) {
-        margin-bottom: auto;
-      }
     }
   }
 
@@ -116,7 +120,9 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    & :last-child {
+    margin-bottom: 32px;
+
+    @media (min-width: 480px) {
       margin-bottom: 64px;
     }
   }

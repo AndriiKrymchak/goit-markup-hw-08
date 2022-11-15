@@ -1429,16 +1429,21 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.mobile-menu__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-.mobile-menu__item:last-child {
+.mobile-menu__list {
   margin-bottom: 32px;
 }
 @media (min-width: 480px) {
-  .mobile-menu__item:last-child {
-    margin-bottom: auto;
+  .mobile-menu__list {
+    margin-bottom: 64px;
   }
+}
+@media (min-width: 568px) {
+  .mobile-menu__list {
+    margin-bottom: 302px;
+  }
+}
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 .mobile-menu__link {
   text-decoration: none;
@@ -1499,9 +1504,12 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  margin-bottom: 32px;
 }
-.mobile-contacts__list :last-child {
-  margin-bottom: 64px;
+@media (min-width: 480px) {
+  .mobile-contacts__list {
+    margin-bottom: 64px;
+  }
 }
 .mobile-contacts__link {
   text-decoration: none;
