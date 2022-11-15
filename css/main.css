@@ -190,6 +190,12 @@ img {
           align-items: center;
   gap: 7px;
 }
+@media (max-width: 445px) {
+  .checkbox__label {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media (min-width: 1200px) {
   .checkbox__label {
     font-size: 14px;
