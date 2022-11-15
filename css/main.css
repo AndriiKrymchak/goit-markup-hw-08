@@ -1387,11 +1387,11 @@ img {
   background-color: var(--primary-white-color);
   padding: 48px 40px;
   z-index: 1;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-  overflow-y: scrolls;
+  -webkit-transition: -webkit-transform 250ms var(--transition-time);
+  transition: -webkit-transform 250ms var(--transition-time);
+  transition: transform 250ms var(--transition-time);
+  transition: transform 250ms var(--transition-time), -webkit-transform 250ms var(--transition-time);
+  overflow-y: scroll;
 }
 @media (min-width: 768px) {
   .mobile-menu {

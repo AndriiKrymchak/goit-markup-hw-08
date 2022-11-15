@@ -10,9 +10,9 @@
   background-color: var(--primary-white-color);
   padding: 48px 40px;
   z-index: 1;
-  transition: transform 0.2s;
+  transition: transform 250ms var(--transition-time);
 
-  overflow-y: scrolls;
+  overflow-y: scroll;
 
   @media (min-width: 768px) {
     display: none;
