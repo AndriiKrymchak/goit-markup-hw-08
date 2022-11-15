@@ -50,10 +50,10 @@
       margin-bottom: 32px;
     }
     &:last-child {
-      margin-bottom: auto;
+      margin-bottom: 32px;
 
       @media (min-width: 480px) {
-        margin-bottom: 302px;
+        margin-bottom: auto;
       }
     }
   }
@@ -82,6 +82,7 @@
 
   &__item {
     padding: 1px 5px;
+
     @media (min-width: 480px) {
       padding: 1px 10px;
     }
@@ -124,7 +125,11 @@
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
+
+    @media (min-width: 480px) {
+      font-size: 24px;
+    }
 
     &:hover,
     &:focus {

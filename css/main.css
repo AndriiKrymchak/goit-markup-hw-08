@@ -1433,11 +1433,11 @@ img {
   margin-bottom: 32px;
 }
 .mobile-menu__item:last-child {
-  margin-bottom: auto;
+  margin-bottom: 32px;
 }
 @media (min-width: 480px) {
   .mobile-menu__item:last-child {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 }
 .mobile-menu__link {
@@ -1507,7 +1507,12 @@ img {
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
+}
+@media (min-width: 480px) {
+  .mobile-contacts__link {
+    font-size: 24px;
+  }
 }
 .mobile-contacts__link:hover, .mobile-contacts__link:focus {
   color: var(--accent-color);
